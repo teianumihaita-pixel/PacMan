@@ -1,0 +1,58 @@
+/* Center game container and score */
+#game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+#score {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	color: #222;
+	font-weight: bold;
+}
+/* PacMan grid layout fix */
+#maze {
+	display: grid;
+	grid-template-columns: repeat(12, 28px);
+	grid-template-rows: repeat(12, 28px);
+	gap: 2px;
+	background: #222;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #0055aa;
+	margin: 0 auto;
+}
+
+.cell {
+	width: 28px;
+	height: 28px;
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #222;
+	border-radius: 8px;
+	box-shadow: 0 0 4px #333 inset;
+	transition: background 0.2s;
+}
+.wall {
+	background: #0055aa;
+}
+.point {
+	background: #fff;
+	box-shadow: 0 0 8px #fff;
+}
+.player {
+	background: #ffcc00;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.ghost {
+	background: #ff4444;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+/* Removed bridge and cat styles. Only PacMan styles remain. */
+
